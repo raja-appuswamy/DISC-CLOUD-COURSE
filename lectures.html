@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Distributed Systems and Cloud Computing by michiard</title>
+  <title>Distributed Systems and Cloud Computing by Raja Appuswamy</title>
 
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -17,7 +17,7 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	
-	  ga('create', 'UA-48382591-1', 'michiard.github.io');
+	  ga('create', 'UA-48382591-1', 'raja-appuswamy.github.io');
 	  ga('send', 'pageview');
 	
 	</script>
@@ -26,7 +26,7 @@
     <div class="wrapper">
       <header>
         <h1>Distributed Systems and Cloud Computing</h1>
-	      <p>Prof. Pietro Michiardi</p>
+	      <p>Dr. Raja Appuswamy</p>
         <p>Lecture Notes and Laboratory Material for the Cloud Computing Course at <a href="http://www.eurecom.fr">EURECOM</a></p>
 
         <p class="view"><a href="https://github.com/EURECOM-CLOUDS-COURSE">View the Labs on GitHub <small>EURECOM-CLOUDS-LAB</small></a></p>
@@ -39,208 +39,24 @@
           <a name="lecture-notes" class="anchor" href="#lecture-notes"><span class="octicon octicon-link"></span></a>Lecture Notes</h1>
           <p>List of topics, recommended reading material, and pointers to the PDF version of the slides. Note that for a large fraction of the slides, the complete Latex sources are available: feel free to fork, and contribute with pull requests.</p>
 
-          <h2><a name="intro" class="anchor" href="#intro"><span class="octicon octicon-link"></span></a>Introduction [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/intro/course.pdf">Slides</a>]</h2> 
+          <h2><a name="intro" class="anchor" href="#intro"><span class="octicon octicon-link"></span></a>Introduction [<a href="https://github.com/raja-appuswamy/DISC-CLOUD-COURSE/raw/master/intro/course.pdf">Slides</a>]</h2> 
             <h3>Topics:</h3>
             <ul>
-              <li>Brief Introduction Big on Data</li>
-              <li>Industrial Use-cases</li>
+              <li>Introduction to Cloud Computing and Big Data</li>
+              <li>Cloud Infrastructure</li>
+			  <li>Cloud Economics</li>
             </ul>
 
             <blockquote>
               <h3>Reading list:</h3>
               <ul>
                 <li><strong>The Datacenter as a Computer: An Introduction to the Design of Warehouse-scale Machines</strong>, by Luiz André Barroso and Urs Hölzle, Morgan Claypool</li>
-                <li><strong>Mining of Massive Datasets</strong>, by Anand Rajaraman and Jeff Ullman, Cambridge University Press</li>
               </ul>
             </blockquote>
 
-          <h2><a name="algodesign" class="anchor" href="#algodesign"><span class="octicon octicon-link"></span></a>Scalable Algorithm Design [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/disa/disa.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>The MapReduce model</li>
-              <li>Awfully Basic Introduction to Functional Programming</li>
-              <li>Design Patterns</li>
-              <!-- <li>Examples: graph algorithms</li> -->
-            </ul>
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>Data-intensive Text Processing with MapReduce</strong>, by Jimmy Lin and Chris Dyer, Morgan Claypool</li>
-              <li><strong>Mining of Massive Datasets</strong>, by Anand Rajaraman and Jeff Ullman, Cambridge University Press</li>
-              <li><strong>Upper and Lower Bounds on the Cost of a Map-Reduce Computation</strong>, by F. Afrati, et al., PVLDB, 2013</li>
-              <li><strong>Enumerating subgraph instances using map-reduce</strong>, by F. Afrati, et al., ICDE, 2013</li>
-              <li><strong>Transitive closure and recursive Datalog implemented on clusters</strong>, by F. Afrati and J. Ullman, EDBT, 2012</li>
-              <li><strong>Monoidify! Monoids as a Design Principle for Efficient MapReduce Algorithms</strong>, by J. Lin, Arxiv, 1304.7544</li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="hadoop-internals" class="anchor" href="#hadoop-internals"><span class="octicon octicon-link"></span></a>Hadoop Internals [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/hadoop/hadoop.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>Hadoop MapReduce Architecture</li>
-              <li>Jobs, Tasks, Task Attempts</li>
-              <li>Scheduling</li>
-              <li>Failures</li>
-              <li>I/O</li>
-              <li>Advanced Features</li>
-              <li>Hadoop Deployments</li>
-            </ul>
-
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>Mapreduce: Simplified data processing on large clusters</strong>, by J. Dean and S. Ghemawat, OSDI, 2004</li>
-              <li><strong>The google file system</strong>, by S. Ghemawat, et al., ACM OSDI, 2003</li>
-              <li><strong>Hadoop: The Definitive Guide</strong>, by T. White, O'Reilly, 2012</li>
-              <li><strong>Hadoop Operations</strong>, by E. Sammer, O'Reilly, 2012</li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="spark-internals" class="anchor" href="#spark-internals"><span class="octicon octicon-link"></span></a>Spark Internals [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/spark/spark.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>Brief introduction about Spark</li>
-              <li>The anatomy of a Spark Application</li>
-              <li>Resource allocation: the DAG and the standalone schedulers</li>
-              <li>Data Shuffling</li>
-              <li>Caching</li>
-              <li>Tuning with a running example</li>
-            </ul>
-
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>Learning Spark</strong>, by Holden Karau, Andy Konwinski, Patrick Wendell and Matei Zaharia, O'Reilly <a href="http://shop.oreilly.com/product/0636920028512.do">[O'Reilly Link]</a></li>
-              <li><strong>Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing</strong>, by M. Zaharia, et al., USENIX NSDI, 2012</li>
-              <li><strong>Sparrow: distributed, low latency schedulin</strong>, by Ousterhout, Kay, et al., ACM SOSP, 2013</li>
-              <li><strong>Introduction to Spark Internals</strong>, by M. Zaharia, Video on YouTube <a href="https://www.youtube.com/watch?v=49Hr5xZyTEA">[Link]</a></li>
-              <li><strong>A Deeper Understanding of Spark Internals</strong>, by Aaron Davidson, Video on YouTube <a href="https://www.youtube.com/watch?v=dmL0N3qfSc8">[Link]</a></li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="cluster-schedulers" class="anchor" href="#cluster-schedulers"><span class="octicon octicon-link"></span></a>Cluster Schedulers [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/schedulers/schedulers.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>Introduction</li>
-              <li>YARN internals</li>
-              <li>MESOS internals</li>
-              <li>BORG internals</li>
-            </ul>
-
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>Hadoop YARN</strong>, by A. C. Murthy, et. al., Addison Wesley <a href="http://www.amazon.com/Apache-Hadoop-YARN-Processing-Addison-Wesley/dp/0321934504">[Amazon Link]</a></li>
-              <li><strong>Mesos: Flexible Resource Sharing for the Cloud</strong>, by B. Hindman, et. al., NSDI, 2011</li>
-              <li><strong>Choosy: Max-Min Fair Sharing for Datacenter Jobs with Constraints</strong>, by A. Ghodsi, et. al., EuroSys, 2013</li>
-              <li><strong>Omega: flexible, scalable schedulers for large compute clusters</strong>, by M. Schwarzkopf, et. al., EuroSys, 2013</li>
-              <li><strong>Large-scale cluster management at Google with Borg</strong>, by A. Verma, et. al., EuroSys, 2015</li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="rel-algebra" class="anchor" href="#rel-algebra"><span class="octicon octicon-link"></span></a>Relational Algebra [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/relal/relal.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>Basic Relational Operators</li>
-              <li>MapReduce Implementation Snippets of Relational Operators</li>
-            </ul>
-
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>Mining of Massive Datasets</strong>, by Anand Rajaraman and Jeff Ullman, Cambridge University Press</li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="sparksql" class="anchor" href="#sparksql"><span class="octicon octicon-link"></span></a>SparkSql [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/sparksql/sparksql.pdf">Slides</a>]</h2>
-            <h3>Topics:</h3>
-            <ul>
-              <li>General overview of data structures</li>
-              <li>SparkSQL internals: a lightweight overview</li>
-            </ul>
-
-            <blockquote>
-            <h3>Reading list:</h3>
-            <ul>
-              <li><strong>SparkSQL: Relational Data Processing in Spark</strong>, by M. Armbrust, et al., SIGMOD, 2015</li>
-            </ul>
-            </blockquote>
-
-          <h2><a name="dist-storage" class="anchor" href="#dist-storage"><span class="octicon octicon-link"></span></a>Distributed Storage Systems [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/kvstore/kvstores.pdf">Slides</a>]</h2>
-          <h4>Older, but more complete versions of the slides are available here:</h4>
-          <p>
-          [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/dstore/dscc-1.pdf">Part 1</a>]:: this slide deck was originally created by Prof. Marko Vukolic (now at IBM Research Zurich)</br>
-          [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/dstore/dscc-2.pdf">Part 2</a>]:: this slide deck was originally created by Prof. Marko Vukolic (now at IBM Research Zurich)</br>
-          [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/hbase/hbase.pdf">HBase</a>]</h2>
-          </p>
-            <h3>Topics:</h3>
-            <ul>
-              <li>The CAP Theorem</li>
-              <li>Amazon Dynamo</li>
-              <li>Cassandra and HBase</li>
-            </ul>
-
-            <blockquote>
-            <h3>Reading list:</h3>
-	    <ul>
-    		<li>Seth Gilbert, Nancy A. Lynch: <strong>Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services.</strong> SIGACT News 33(2): 51-59 (2002)</li>
-    		<li>DeCandia et al. <strong>Dynamo: Amazon's highly available key-value store.</strong> SOSP 2007: 205-220 (2007)</li>
-		    <li>Eric A. Brewer: <strong>Pushing the CAP: Strategies for Consistency and Availability.</strong> IEEE Computer 45(2): 23-29 (2012)</li>
-		    <li>Seth Gilbert, Nancy A. Lynch: <strong>Perspectives on the CAP Theorem.</strong> IEEE Computer 45(2): 30-36 (2012)</li>
-		    <li>Marko Vukolić: <strong>Quorum Systems with Applications to Storage and Consensus.</strong> Morgan&Claypool (2012)</li>
-		    <li>Ion Stoica et al: <strong>Chord: a scalable peer-to-peer lookup protocol for internet applications.</strong> IEEE/ACM Trans. Netw. 11(1): 17-32 (2003)</li>
-        <li>Avinash Lakshman, Prashant Malik: <strong>Cassandra: a decentralized structured storage system.</strong> Operating Systems Review 44(2): 35-40 (2010)</li>
-        <li>Apache Cassandra 1.2 Documentation. Datastax. http://www.datastax.com/docs/1.2/index</li>
-        <li>Eben Hewitt: <strong>Cassandra: The definitive Guide.</strong> O’Reilly. (2010) http://bit.ly/JHwwR6</li>
-        <li>Edward Capriolo: <strong>Cassandra High Performance Cookbook.</strong> Packt Publishing. (2011)</li>
-	    </ul>
-            </blockquote>
-
-          <h2><a name="coordination" class="anchor" href="#coordination"><span class="octicon octicon-link"></span></a>Coordinating distributed systems
-            [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/coordination/coordination.pdf">Slides</a>]</h2> 
-            <!-- [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/dstore/dscc-2.pdf">Part 2</a>] -->
-            <h3>Topics:</h3>
-            <ul>
-              <li>PAXOS</li>
-              <li>Zookeeper</li>
-            </ul>
-
-            <blockquote>
-            <h3>Reading List:</h3>
-            <ul>
-              <li>Patrick Hunt, Mahadev Kumar, Flavio P. Junqueira and Benjamin Reed: <strong>Zookeeper: Wait-free coordination for Internet-scale systems.</strong> In proc. USENIX ATC (2010)</li>
-              <li><strong>Zookeeper 3.4 Documentation.</strong> http://zookeeper.apache.org/doc/trunk/index.html</li>
-              <li>Flavio Paiva Junqueira, Benjamin C. Reed, Marco Serafini: <strong>Zab: High-performance broadcast for primary-backup systems.</strong> DSN 2011: 245-256</li>
-              <li>Michael Burrows: <strong>The Chubby Lock Service for Loosely-Coupled Distributed Systems.</strong> OSDI 2006: 335-350</li>
-              <li>Atul Adya, John Dunagan, Alec Wolman: <strong>Centrifuge: Integrated Lease Management and Partitioning for Cloud Services.</strong> NSDI 2010: 1-16</li>
-            </ul>
-            </blockquote>
-
-            <h2><a name="ccomp" class="anchor" href="#ccomp"><span class="octicon octicon-link"></span></a>Selected Topics in Cloud Computing
-            [<a href="https://github.com/michiard/DISC-CLOUD-COURSE/raw/master/ccomp/dscc-4.pdf">Slides</a>]</h2> 
-
-            <h3>Topics:</h3>
-            <ul>
-              <li>Cloudonomics 101</li>
-            </ul>
-
-            <blockquote>
-            <h3>Reading List:</h3>
-            <ul>
-              <li>J. Weinman. <strong>Cloudonomics: The Business Value of Cloud Computing</strong>, Wiley, 2012</li>
-              <li>L.A. Barroso, Jimmy Clidaras and U. Holzle. <strong>The Datacenter as a Computer: An Itroduction to the Design of Warehouse-Scale Machines</strong>, Morgan&Claypool, 2nd ed. July 2013</li>
-            </ul>
-            </blockquote>
-
-
         </section>
         <footer>
-        <p>This project is maintained by <a href="https://github.com/michiard">Pietro Michiardi</a></p>
+        <p>This project is maintained by <a href="https://github.com/raja-appuswamy">Raja Appuswamy</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         </footer>
       </div>
