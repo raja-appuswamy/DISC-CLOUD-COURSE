@@ -1,144 +1,239 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame {\frametitle{What is this Course About}
+\frame {\frametitle{We live in a world of data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{itemize}
-    \item \textbf{Principles of functional programming}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.25]{./Figures/big-data-graphic}
+    \caption{Data deluge.}
+    \label{fig:hdfs}
+  \end{figure}
+}
 
-\vspace{10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Big Data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+    \item \textbf{Big data is defined as large pools of data that can be captured, communicated, aggregated, stored, and analyzed.}
+
+    \item \textbf{Data continues to grow}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.25]{./Figures/IDC_DataSphere}
+		\caption{Global datasphere}
+		\label{fig:hdfs}
+	\end{figure}
+	
+    \item \textbf{Applications are becoming data intensive}
+	\begin{itemize}
+		\item More data leads to better accuracy
+		\item With more data, accuracy of different algorithms converges
+	\end{itemize}
+	
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Let's look at your data.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{./Figures/devices}
+    \label{fig:hdfs}
+  \end{figure}
   
-    \item \textbf{In-depth description of Hadoop MapReduce}
+ \begin{colorblock}{blue}{lightblue}{ }
+  \begin{center}
+    \large \textbf{\texttt{You want to access, shared, process your data \\from all your devices, anytime, anywhere.}}
+  \end{center}
+  \end{colorblock}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{How will we manage all this data?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+    \item \textbf{Manage it ourselves?}
     \begin{itemize}
-      \item Architecture internals
-      \item Cluster deployments
+      \item How do we store it? 
+	  \item How do we share it? 
+	  \item How can we enable access to it from any place?
+	  \item How do we process all of it?
+	  \item How do we secure it?
+	  \item ....
     \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{In-depth description of Apache Spark}
+	
+	\item \textbf{What if it is managed by someone else?}
     \begin{itemize}
-      \item Architecture internals
+      \item Someone provides a management ``service'' 
+	  \item You pay a subscription for this ``service''
     \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{Relational Algebra and High-Level Languages}
-    \begin{itemize}
-      \item Basic operators and their equivalence in MapReduce
-      \item Apache SparkSQL
-    \end{itemize}
-
+	
 \end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame {\frametitle{What is this Course About}
+\frame {\frametitle{Utility--Product--Service lifecycle (1)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-
-    \item \textbf{Cluster schedulers}
-    \begin{itemize}
-      \item Apache YARN, a.k.a. Hadoop v.2
-      \item Apache Mesos
-      \item Google Omega
-    \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{Distributed Database Systems}
-    \begin{itemize}
-      \item Amazon Dynamo
-      \item Apache Cassandra
-      \item Apache HBase
-    \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{Coordination}
-    \begin{itemize}
-      \item Apache Zookeeper
-    \end{itemize}
-
-  \end{itemize}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{./Figures/water-utility}
+    \label{fig:hdfs}
+  \end{figure}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame {\frametitle{Who is this course for?}
+\frame {\frametitle{Utility--Product--Service lifecycle (2)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-
-    \item \textbf{System engineers}
-
-\vspace{10pt}
-
-    \item \textbf{Data scientists}
-
-\vspace{10pt}
-
-    \item \textbf{Requirements}
-    \begin{itemize}
-      \item Good knowledge of Python
-      \item Familiarity with operating systems concepts, and Linux
-      \item Good knowledge of git
-      \item Ideally, familiarity with distributed algorithms
-    \end{itemize}
-
-  \end{itemize}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{./Figures/electricity-utility}
+    \label{fig:hdfs}
+  \end{figure}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame {\frametitle{How to make the most of this course?}
+\frame {\frametitle{Generalizing the lifecycle}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{./Figures/generalizing-lifecycle}
+    \label{fig:hdfs}
+  \end{figure}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Cloud Computing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{itemize}
+	\item Transformation of IT from a product to a service
+\end{itemize}
 
-    \item \textbf{Contribute!}
-    \begin{itemize}
-      \item The whole course is open source
-      \item Pull-request based
-      \item Contribute to both lecture notes and laboratories
-    \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{Attend classes and the labs}
-    \begin{itemize}
-      \item Many discussions in live classes, that are not on the slides
-      \item Laboratories can be hard for people with little CS background
-    \end{itemize}
-
-\vspace{10pt}
-
-    \item \textbf{Resources}
-    \begin{itemize}
-      \item Lecture notes: \url{http://michiard.github.io/DISC-CLOUD-COURSE/}
-    \end{itemize}
-
-  \end{itemize}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{./Figures/it-transformation}
+    \label{fig:hdfs}
+  \end{figure}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame {\frametitle{Grading}
+\frame {\frametitle{How did IT transformation happen?}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-
-    \item \textbf{Final exam}
-    \begin{itemize}
-      \item 50\% of the grade
-      \item Generally divided in two parts
-      \begin{itemize}
-        \item A series of questions
-        \item One or more problems to solve
-      \end{itemize}
-    \end{itemize}
-
-\vspace{40pt}
-
-    \item \textbf{Laboratory sessions}
-    \begin{itemize}
-      \item Mainly Notebooks, some special labs
-      \item Question answering
-      \item Heuristic to map credits to grade
-    \end{itemize}
-
+	\item Requirements to transform IT
+	
+	\begin{itemize}
+		\item Connectivity to move data
+		\item Interactivity for seamless interface
+		\item Reliability against failures
+		\item Acceptable performance 
+		\item Ease of programmability for developing new services
+		\item Manageability for Big Data
+		\item Pay-as-you-go to avoid capital investment		
+		\item Scalability and elasticity for changing needs
+	\end{itemize}
+	
 \end{itemize}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Supporting technologies}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+	\item Cloud computing is a combination of technologies
+	
+	\begin{itemize}
+		\item Connectivity to move data => \textbf{Networked systems}
+		\item Interactivity for seamless interface => \textbf{Web 2.0 and HCI} 
+		\item Reliability against failures => \textbf{Dependable systems}
+		\item Acceptable performance => \textbf{Parallel and distributed systems}
+		\item Ease of programmability for developing new services => \textbf{Programming languages}
+		\item Manageability for Big Data  => \textbf{Storage systems}
+		\item Pay-as-you-go to avoid capital investment	=> \textbf{Utility computing \& economics}	
+		\item Scalability and elasticity for changing needs => \textbf{Virtualization}
+	\end{itemize}
+	
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Formal definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{./Figures/cloud-definition}
+	\label{fig:hdfs}
+\end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Why Cloud Computing?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{./Figures/why-cloud}
+	\label{fig:hdfs}
+\end{figure}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Applications enabled by cloud computing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+	\item High-growth applications
+	\begin{itemize}
+		\item When you startup gains traction, can you keep up?
+		\item Friendster(2001): Could not keep up with user growth
+		\item Facebook (2006): \$Billion company today			
+		\item Airbnb, Uber, Expedia, ...			
+	\end{itemize}
+
+	\item Aperiodic applications
+	\begin{itemize}
+		\item How do you deal with sudden load peaks?
+		\begin{itemize}
+			\item Amazon Prime Day: Aurora cloud database processed 148 billion transactions, stored 609 terabytes of data, and transferred 306 terabytes of data
+			\item Flipkart: Website crashed on their ``Big Billion Day'' sale
+		\end{itemize}
+		
+		\item If you design for peak, how do you deal with low loads?
+		\begin{itemize}
+			\item Amazon normal day: 1.3 billion transactions
+		\end{itemize}		
+	\end{itemize}	
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Applications enabled by cloud computing(2)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+	\item On-off applications
+	\begin{itemize}
+		\item Scientific simulation using 1000s of computers
+		\begin{itemize}
+			\item DNA Nexus and Baylor college of medicine analyzed DNA of more than 14,000 individuals
+			\item 2.4 million core-hours of computational time, 440 TB of results, 1PB of storage
+		\end{itemize}		
+		\item Why not rent computing time to run such one-off experiments?
+	\end{itemize}
+	
+	\item Periodic applications
+	\begin{itemize}
+		\item Stock market analysis
+		\begin{itemize}
+			\item Mine market data during day
+			\item Analyze data during night
+			\item Different computational requirements at different times
+		\end{itemize}
+		
+		\item Dynamic, flexible infrastructure can reduce costs, improve performance
+	\end{itemize}
+\end{itemize}
+}
