@@ -1,0 +1,8 @@
+title: Distributed Systems and Cloud Computing
+description: Lecture Notes and Laboratory Material for the Cloud Computing Course at Eurecom
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
